@@ -57,3 +57,22 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  /* searchform */
+  .search-form {
+    @apply max-w-2xl w-full min-h-[64px] bg-white border border-gray-300 rounded-full text-lg mt-6 px-4 flex items-center gap-4 shadow-md;
+  }
+
+  .search-input {
+    @apply flex-1 font-medium placeholder:font-semibold placeholder:text-gray-500 text-gray-800 w-full h-auto outline-none bg-transparent;
+  }
+
+  .search-btn {
+    @apply w-10 h-10 rounded-full bg-green-700 text-white flex justify-center items-center transition hover:bg-green-900;
+  }
+
+  .search-btn .icon {
+    @apply w-6 h-6;
+  }
+}

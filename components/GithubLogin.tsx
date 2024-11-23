@@ -7,7 +7,7 @@ const GithubLogin = () => {
       label="Sign In with GitHub"
       Icon={Github}
       action="sign-in"
-      className="rounded-4xl py-6 px-8"
+      className="rounded-4xl py-6 px-8 cursor-pointer"
     />
   );
 };
