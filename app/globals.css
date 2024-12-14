@@ -3,6 +3,15 @@
 @config "../tailwind.config.ts";
 
 @layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 47.4% 11.2%;
@@ -74,5 +83,24 @@
 
   .search-btn .icon {
     @apply w-6 h-6;
+  }
+
+  /* Scan Page CSS */
+  .scan-header {
+    @apply flex justify-between items-center px-5 py-6 border-gray-800;
+  }
+
+  .scan-title {
+    @apply text-white/80 font-semibold text-xl;
+  }
+
+  .action-btn {
+    @apply bg-gray-700 rounded-full flex justify-center items-center p-2 hover:bg-gray-600 transition;
+    color: white;
+  }
+
+  /* Content Section */
+  .capture-btn {
+    @apply bg-green-500 text-white text-sm font-semibold px-6 py-3 rounded-lg mt-6 shadow-md hover:bg-green-600 transition;
   }
 }

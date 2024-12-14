@@ -1,3 +1,4 @@
+import BottomNav from "@/components/BottomNav";
 import Navbar from "@/components/Navbar";
 
 export default function HomeLayout({
@@ -7,6 +8,7 @@ export default function HomeLayout({
     <main>
       <Navbar />
       {children}
+      
     </main>
   );
 }
